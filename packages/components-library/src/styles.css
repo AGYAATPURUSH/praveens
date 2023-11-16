@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-editor {
+    :is(a) {
+        @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600;
+    }
+
+    :is(ul, ol) {
+        @apply list-disc ml-6;
+    }
+
+    :is(ol) {
+        @apply list-decimal;
+    }
+
+    :is(p, h1, h2, h3) {
+        @apply mb-4;
+    }
+}
